@@ -8,7 +8,7 @@ import ContactUs from './pages/ContactUs'
 const App = () => {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/SarkinMota_Autos">
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/aboutus' element={<AboutUs />}/>
