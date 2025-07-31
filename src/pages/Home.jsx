@@ -5,6 +5,7 @@ import CarVideo from '../components/CarVideo'
 import Featured from '../components/Featured'
 import WhyUs from '../components/WhyUs'
 import OurMision from '../components/OurMision'
+import Footer from '../components/Footer'
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
     <Featured />
     <WhyUs />
     <OurMision />
+    <Footer />
     </>
   )
 }

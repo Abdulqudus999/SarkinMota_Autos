@@ -6,7 +6,7 @@ import { FadeRight, FadeUp } from '../utility/Animation';
 
 const Hero = () => {
   return (
-    <section className='bg-[#201f1f] relative z-10 overflow-x-hidden lg:overflow-x-visible'>
+    <section className='bg-[#201f1f] relative z-10'>
       <div className='max-w-7xl mx-auto'>
         <div className='flex flex-col lg:flex-row gap-6 h-screen lg:h-[650px] lg:justify-center lg:items-center lg:pt-0 pt-12'>
           {/* hero text */}

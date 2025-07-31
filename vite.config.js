@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/SarkinMota_Autos"
+  base: "#/SarkinMota_Autos"
 })

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center px-5 lg:px-0'>
             {/* logo */}
             <div>
-              <h1 className='text-red-800 font-black text-3xl tracking-tight'>SARKINMOTA_AUTOS</h1>
+              <h1 className='text-red-800 font-black text-2xl lg:text-3xl tracking-tight'>SARKINMOTA_AUTOS</h1>
               {/*<img src={Logo} alt="our logo" className='w-24'/>*/}
             </div>
             {/* nav links */}

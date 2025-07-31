@@ -15,14 +15,14 @@ const OurMision = () => {
         <p className='text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nemo?</p>
       </motion.div>
       <div className='flex flex-col lg:flex-row items-center justify-center'>
-              <div className='w-1/2'>
+              <div className='lg:w-1/2'>
                 <motion.img 
                 initial = {{opacity:0, x:-200, scale:0.7}}
                 whileInView = {{opacity:1, x:0, scale:1}}
                 transition={{duration:1.5, delay:0.2}}
                 src={ourmissioncar} alt="" />
               </div>
-              <div className='w-1/2'>
+              <div className='lg:w-1/2 px-4 lg:px-0'>
                 <motion.p 
                   initial = {{opacity:0, x:200}}
                   whileInView = {{opacity:1, x:0}}
