@@ -96,43 +96,40 @@ const Featured = () => {
   ];
 
   const settings = {
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase:'Linear',
-    Responsive: [
+    responsive: [
       {
-        breakpoint: 1023,
-        settings:{
-          slidesToShow:3,
-          slidesToScroll:3,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
-          dots: false,
-        },
+          dots: true
+        }
       },
       {
-        breakpoint: 768,
-        settings:{
-          slidesToShow:2,
-          slidesToScroll:2,
-          initialSlide:2,
-        },
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
       },
       {
         breakpoint: 480,
-        settings:{
-          slidesToShow:1,
-          slidesToScroll:1,
-          initialSlide:2,
-        },
-      },
-    ],
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
   return (
     <section className='bg-slate-50 overflow-hidden py-10'>
       <motion.div
@@ -144,7 +141,7 @@ const Featured = () => {
         <p className='text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </motion.div>
-      <div className='pt-10'>
+      <div className='mt-8'>
         <Slider {...settings}>
           {featuredCars.map((item)=> (
             <FeaturedCard key={item.id} img={item.img} name={item.name} price={item.price} />
