@@ -5,7 +5,7 @@ import { FadeUp } from '../utility/Animation'
 
 const OurMision = () => {
   return (
-    <section className='bg-slate-50 py-10 overflow-hidden'>
+    <section className='bg-slate-50 py-10 overflow-hidden max-w-7xl mx-auto'>
       <motion.div 
               variants={FadeUp(0.2)}
               initial="hidden"

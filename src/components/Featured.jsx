@@ -97,7 +97,7 @@ const Featured = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -131,7 +131,7 @@ const Featured = () => {
   };
 
   return (
-    <section className='bg-slate-50 overflow-hidden py-10'>
+    <section className='bg-slate-50 overflow-hidden py-10 max-w-7xl mx-auto'>
       <motion.div
       variants={Fadeleft(0.2)}
       initial="hidden"

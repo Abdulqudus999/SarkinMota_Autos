@@ -1,14 +1,14 @@
 import React from 'react'
 
-const NewsAndAdvicesCards = ({id, img, details}) => {
+const NewsAndAdvicesCards = ({id, img, news}) => {
   return (
-    <div key={id}>
+    <div className='border-2 border-red-100 bg-red-50 text-black rounded-xl cursor-pointer' key={id}>
       <div>
-        {img}
+        <img src={img} alt="" className='w-full'/>
       </div>
-      <caption>
-        {details}
-      </caption>
+      <div className='font-open-sans font-semibold text-sm lg:text-lg'>
+        {news}
+      </div>
     </div>
   )
 }

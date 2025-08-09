@@ -10,7 +10,7 @@ const WhyUs = () => {
   const icon2 = <User2 />;
   const icon3 = <ShipIcon/>;
   return (
-    <section className='py-10 bg-slate-50 overflow-hidden'>
+    <section className='py-5 bg-slate-50 overflow-hidden max-w-7xl mx-auto'>
       <motion.div
       variants={FadeUp(0.2)}
       initial="hidden"

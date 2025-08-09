@@ -6,6 +6,7 @@ import Featured from '../components/Featured'
 import WhyUs from '../components/WhyUs'
 import OurMision from '../components/OurMision'
 import Footer from '../components/Footer'
+import NewsAndAdvices from '../components/NewsAndAdvices'
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
     <Featured />
     <WhyUs />
     <OurMision />
+    <NewsAndAdvices/>
     <Footer />
     </>
   )
