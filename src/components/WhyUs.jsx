@@ -16,8 +16,8 @@ const WhyUs = () => {
       initial="hidden"
       animate="visible"
       className='text-center my-7'>
-        <h1 className='text-4xl lg:text-6xl font-bold'>Why choose <span className='text-red-500'>SarkinMato Autos</span></h1>
-        <p className='text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h1 className='font-Merriweather text-4xl lg:text-6xl font-bold'>Why choose <span className='text-red-500'>SarkinMato Autos</span></h1>
+        <p className='font-open-sans text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </motion.div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mx-5'>
         <WhyUsCard icon={icon1} title='Financing Options' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus eaque inventore similique voluptatibus iure deleniti, rerum sit fugaLorem ipsum dolor, sit amet consectetur adipisicing

@@ -137,8 +137,8 @@ const Featured = () => {
       initial="hidden"
       animate="visible"
       className='text-center'>
-        <h2 className='text-4xl lg:text-6xl font-bold'>Our <span className='text-red-500'>Featured Cars</span></h2>
-        <p className='text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <h2 className='text-4xl lg:text-6xl font-bold font-Merriweather'>Our <span className='text-red-500'>Featured Cars</span></h2>
+        <p className='font-open-sans text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </motion.div>
       <div className='mt-8'>

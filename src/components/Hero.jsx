@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '../assets/hero-mercedes-benz.png'
-import { ChevronRight, Gauge, Zap } from 'lucide-react';
+import { ChevronRight, Gauge, Zap, LucideBrackets } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FadeRight, FadeUp } from '../utility/Animation';
 
@@ -21,33 +21,33 @@ const Hero = () => {
               variants={FadeRight(0.9)}
               initial="hidden"
               animate="visible"
-              className='text-4xl lg:text-6xl text-white font-bold'>Buy your dream car at <span className='text-red-500'>SarkinMota Autos</span>
+              className='text-4xl lg:text-6xl text-white font-bold font-Merriweather'>Buy your dream car at <span className='text-red-500'>SarkinMota Autos</span> 
               <span className='text-sm block mt-1.5 text-white font-mono'>Beta cars nah Sarkinmota sell ham</span></motion.h1>
               
               <motion.p 
               variants={FadeRight(1)}
               initial="hidden"
               animate="visible"
-              className='text-white text-sm'>Discover the world's most exclusive and high-performance vehicles. From blistering speed to unparalleled luxury, our exotic cars redefine the limit of automotive engineering.</motion.p>
+              className='font-open-sans text-white text-sm'>Discover the world's most exclusive and high-performance vehicles. From blistering speed to unparalleled luxury, our exotic cars redefine the limit of automotive engineering.</motion.p>
               <div className='flex gap-3 items-center'>
               <motion.button 
               variants={FadeRight(1.5)}
               initial="hidden"
               animate="visible"
-              className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold flex items-center'>Explore More <ChevronRight />
+              className='font-open-sans bg-red-500 text-white px-4 py-2 rounded-full font-semibold flex items-center'>Explore More <ChevronRight />
               </motion.button>
               <motion.button 
               variants={FadeRight(1.2)}
               initial="hidden"
               animate="visible"
-              className='bg-white font-semibold rounded-full px-4 py-2 text-red-500'>See Cars
+              className='font-open-sans bg-white font-semibold rounded-full px-4 py-2 text-red-500'>See Cars
               </motion.button>
               </div>
               <motion.div 
               variants={FadeUp(1.8)}
               initial="hidden"
               animate="visible"
-              className='flex flex-col gap-2 lg:flex-row text-white pt-7 lg:gap-5'>
+              className='font-open-sans flex flex-col gap-2 lg:flex-row text-white pt-7 lg:gap-5'>
                 <div className='flex items-center '>
                   <Gauge className='h-8 w-8 text-red-500 mr-2' />
                   <span className='text-sm font-medium'>Top Speed: 350 km/h</span>

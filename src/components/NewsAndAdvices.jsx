@@ -1,6 +1,15 @@
 import React from 'react'
+import NewsAndAdvicesCards from './NewsAndAdvicesCards'
+import { details } from 'framer-motion/client'
 
 const NewsAndAdvices = () => {
+  const newsAndAdvices = [
+    {
+      id: 0,
+      img: '',
+      details: ''
+    }
+  ]
   return (
     <section className='bg-slate-50 py-10'>
       <div className='text-center'>
@@ -8,7 +17,11 @@ const NewsAndAdvices = () => {
         <p className='text-lg lg:text-xl mt-2'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestiae?</p>
       </div>
       <div>
-        {}
+        {
+          newsAndAdvices.map((newsAndAdvice) => (
+            <NewsAndAdvicesCards key={newsAndAdvice.id} img={newsAndAdvice.img} details={newsAndAdvice.details} />
+          ))
+        }
       </div>
     </section>
   )

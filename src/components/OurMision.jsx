@@ -11,8 +11,8 @@ const OurMision = () => {
               initial="hidden"
               animate="visible"
       className='text-center my-7'>
-        <h1 className='text-4xl lg:text-6xl font-bold'>Our <span className='text-red-500 '>Mission</span></h1>
-        <p className='text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nemo?</p>
+        <h1 className='font-Merriweather text-4xl lg:text-6xl font-bold'>Our <span className='text-red-500 '>Mission</span></h1>
+        <p className='font-open-sans text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nemo?</p>
       </motion.div>
       <div className='flex flex-col lg:flex-row items-center justify-center'>
               <div className='lg:w-1/2'>
@@ -27,6 +27,7 @@ const OurMision = () => {
                   initial = {{opacity:0, x:200}}
                   whileInView = {{opacity:1, x:0}}
                   transition={{duration:1, delay:0.2}}
+                  className='font-open-sans'
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cumque reprehenderit autem. Asperiores ullam reprehenderit vel eum debitis numquam veritatis!
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed in quidem eius minus ut libero iste ex necessitatibus nulla modi culpa dicta dolores debitis obcaecati non aspernatur labore expedita cupiditate sint facilis, quo enim omnis! Adipisci voluptate ipsam minima.

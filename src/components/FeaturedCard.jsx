@@ -7,11 +7,10 @@ const FeaturedCard = ({id, img, name, price}) => {
         <img src={img} alt="" className='rounded-t-xl w-full'/>
       </div>
       <div className='flex flex-col justify-center items-center'>
-            <h3 className='font-semibold text-lg lg:text-xl pt-2 text-red-500'>{name}</h3>
-        <div className='flex gap-10 py-2'>
+            <h3 className='font-open-sans font-semibold text-lg lg:text-xl pt-2 text-red-500'>{name}</h3>
+        <div className='font-open-sans flex gap-10 py-2'>
             <p className='font-medium text-[15px] lg:text-lg'>Starting at <span className=''>#{price}</span></p>
         </div>
-        <button className='px-2 py-1 bg-red-500 font-semibold hover:bg-red-400 transition duration-300 text-lg lg:text-xl rounded-lg hover:text-red-700'>Buy Me</button>
       </div>
       
     </div>
