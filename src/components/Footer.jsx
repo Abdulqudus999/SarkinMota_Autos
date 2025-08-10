@@ -6,7 +6,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className='font-open-sans bg-muted text-muted-foreground bg-red-100'>
+    <footer className='font-open-sans bg-muted text-muted-foreground bg-red-100 mt-20'>
       <div className='max-w-7xl mx-auto px-6 py-12'>
         <div className='grid lg:grid-cols-4 gap-8'>
           <div>

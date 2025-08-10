@@ -25,73 +25,85 @@ const Featured = () => {
       id:0,
       img: featuredCar1,
       name: 'Mercedes Benz G-class',
-      price: '250,000,000'
+      price: '250,000,000',
+      tag: 'New'
     },
     {
       id:1,
       img: featuredCar2,
       name: 'White Mercedes amg-sl63',
-      price: '200,000,000'
+      price: '200,000,000',
+      tag: 'Used'
     },
     {
       id:2,
       img: featuredCar3,
       name: 'Mercedes amg-gt luxury',
-      price: '300,000,000'
+      price: '300,000,000',
+      tag: 'New'
     },
     {
       id:3,
       img: featuredCar4,
       name: 'Bugatti French car',
-      price: '900, 000, 000'
+      price: '900, 000, 000',
+      tag: 'New'
     },
     {
       id:4,
       img: featuredCar5,
       name: 'Bugatti Veyron-164',
-      price: '1,000,000,000'
+      price: '1,000,000,000',
+      tag: 'Used'
     },
     {
       id:5,
       img: featuredCar6,
       name: 'Rolls Royce carrolls',
-      price: '150,000,000,000'
+      price: '150,000,000,000',
+      tag: 'New'
     },
     {
       id:6,
       img: featuredCar7,
       name: 'Rolls Royce Carrolls blue',
-      price: '150,000,000,000'
+      price: '150,000,000,000',
+      tag: 'New'
     },
     {
       id:7,
       img: featuredCar8,
       name: 'Toyota Land Cruiser',
-      price: '450,000,000'
+      price: '450,000,000',
+      tag: 'Used'
     },
     {
       id:8,
       img: featuredCar9,
       name: 'Toyota c-hr',
-      price: '350,000,000'
+      price: '350,000,000',
+      tag: 'Used'
     },
     {
       id:9,
       img: featuredCar10,
       name: 'Toyota ft-1 sport',
-      price: '250,000,000'
+      price: '250,000,000',
+      tag: 'New'
     },
     {
       id:10,
       img: featuredCar11,
       name: 'White Ferrari Car',
-      price: '250,000,000'
+      price: '250,000,000',
+      tag: 'New'
     },
     {
       id:11,
       img: featuredCar12,
       name: 'Yellow Ferrari Car',
-      price: '250,000,000'
+      price: '250,000,000',
+      tag: 'New'
     },
   ];
 
@@ -131,20 +143,20 @@ const Featured = () => {
   };
 
   return (
-    <section className='bg-slate-50 overflow-hidden py-10 max-w-7xl mx-auto'>
+    <section className='bg-slate-50 overflow-hidden py-10'>
       <motion.div
       variants={Fadeleft(0.2)}
       initial="hidden"
       animate="visible"
       className='text-center'>
         <h2 className='text-4xl lg:text-6xl font-bold font-Merriweather'>Our <span className='text-red-500'>Featured Cars</span></h2>
-        <p className='font-open-sans text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p className='font-open-sans text-lg lg:text-xl mt-2'>We provide you with the best luxurious and exotic cars you can never find elsewhere
         </p>
       </motion.div>
       <div className='mt-8'>
         <Slider {...settings}>
           {featuredCars.map((item)=> (
-            <FeaturedCard key={item.id} img={item.img} name={item.name} price={item.price} />
+            <FeaturedCard key={item.id} img={item.img} name={item.name} price={item.price}  tag={item.tag}/>
           ))}
         </Slider>
       </div>

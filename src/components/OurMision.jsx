@@ -5,14 +5,14 @@ import { FadeUp } from '../utility/Animation'
 
 const OurMision = () => {
   return (
-    <section className='bg-slate-50 py-10 overflow-hidden max-w-7xl mx-auto'>
+    <section className='bg-slate-50 py-10 overflow-hidden'>
       <motion.div 
               variants={FadeUp(0.2)}
               initial="hidden"
               animate="visible"
       className='text-center my-7'>
         <h1 className='font-Merriweather text-4xl lg:text-6xl font-bold'>Our <span className='text-red-500 '>Mission</span></h1>
-        <p className='font-open-sans text-lg lg:text-xl mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nemo?</p>
+        <p className='font-open-sans text-lg lg:text-xl'>Our mission stated.</p>
       </motion.div>
       <div className='flex flex-col lg:flex-row items-center justify-center'>
               <div className='lg:w-1/2'>
