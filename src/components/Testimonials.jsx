@@ -3,7 +3,7 @@ import React from 'react'
 const Testimonials = () => {
   return (
     <div class="flex flex-wrap items-center justify-center gap-6 pt-14">
-    <div class="text-sm w-80 border border-gray-200 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+        <div class="text-sm w-80 border border-gray-200 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
         <div class="flex flex-col items-center px-5 py-4 relative">
             <img class="h-24 w-24 absolute -top-14 rounded-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="userImage1" />
             <div class="pt-8 text-center">
@@ -31,7 +31,7 @@ const Testimonials = () => {
                 </svg>
             </div>
         </div>
-    </div>
+        </div>
 
     <div class="text-sm w-80 border border-gray-200 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
         <div class="flex flex-col items-center px-5 py-4 relative">

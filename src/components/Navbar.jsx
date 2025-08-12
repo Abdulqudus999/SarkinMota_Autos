@@ -24,10 +24,10 @@ const Navbar = () => {
             </div>
             {/* nav links */}
             <ul className='lg:flex gap-6 items-center hidden'>
-              <li className='hover:text-red-500 cursor-pointer transition-all' ><a href="/">Home</a></li>
-              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/aboutus">About Us</a></li>
-              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/ourcars">Our Cars</a></li>
-              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/contactus">Contact Us</a></li>
+              <li className='hover:text-red-500 cursor-pointer transition-all' ><a href="#">Home</a></li>
+              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">About Us</a></li>
+              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">Our Cars</a></li>
+              <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">Contact Us</a></li>
               <button className='bg-red-500 cursor-pointer hover:bg-red-500/85 text-white px-4 py-2 rounded-full transition-all'>Sign Up</button>
             </ul>
             <button onClick={navhandler} className='lg:hidden z-50 cursor-pointer'>
@@ -39,10 +39,10 @@ const Navbar = () => {
       openMenu ? (
       <nav className='lg:hidden'>
         <ul className='flex flex-col space-y-10 bg-slate-50 w-[300px] h-[950px] items-center pt-36 absolute text-2xl font-semibold top-0 z-30 right-0'>
-          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/">Home</a></li>
-          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/aboutus">About Us</a></li>
-          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/ourcars">Our Cars</a></li>
-          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="/contactus">Contact Us</a></li>
+          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">Home</a></li>
+          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">About Us</a></li>
+          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">Our Cars</a></li>
+          <li className='hover:text-red-500 cursor-pointer transition-all'><a href="#">Contact Us</a></li>
           <button className='bg-red-500 hover:bg-red-500/85 cursor-pointer transition-all text-white px-4 py-2 rounded-full'>Sign Up</button>
         </ul>
       </nav>

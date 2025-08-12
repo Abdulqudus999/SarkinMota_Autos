@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
@@ -15,11 +15,22 @@ import featuredCar10 from '../assets/toyotaF3.png'
 import featuredCar11 from '../assets/ferrariF1.png'
 import featuredCar12 from '../assets/ferrariF2.png'
 import FeaturedCard from './FeaturedCard';
-import { motion } from 'framer-motion';
-import { Fadeleft, FadeRight, FadeUp } from '../utility/Animation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Featured = () => {
+
+  useEffect(() => {
+      AOS.init({
+        offset: 100,
+        duration: 800,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
+      AOS.refresh();
+    }, [])
+    
   const featuredCars = [
     {
       id:0,
@@ -144,15 +155,18 @@ const Featured = () => {
 
   return (
     <section className='bg-slate-50 overflow-hidden py-10'>
-      <motion.div
-      variants={Fadeleft(0.2)}
-      initial="hidden"
-      animate="visible"
+      <div
       className='text-center'>
-        <h2 className='text-4xl lg:text-6xl font-bold font-Merriweather'>Our <span className='text-red-500'>Featured Cars</span></h2>
-        <p className='font-open-sans text-lg lg:text-xl mt-2'>We provide you with the best luxurious and exotic cars you can never find elsewhere
+        <h2 
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className='text-4xl lg:text-6xl font-bold font-Merriweather'>Our <span className='text-red-500'>Featured Cars</span></h2>
+        <p 
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        className='font-open-sans text-lg lg:text-xl mt-2'>We provide you with the best luxurious and exotic cars you can never find elsewhere
         </p>
-      </motion.div>
+      </div>
       <div className='mt-8'>
         <Slider {...settings}>
           {featuredCars.map((item)=> (
