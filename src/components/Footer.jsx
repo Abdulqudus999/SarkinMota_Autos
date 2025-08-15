@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='mt-8 border-t border-red-400/20 pt-8 text-center'>
+        <div className='mt-8 border-t border-red-400/50 pt-8 text-center'>
           <p>&copy; {new Date().getFullYear()} <span className='text-red-500 font-semibold'>SarkinMota Autos</span> All rights Reserved</p>
           <p className=''>Powered by <a href="#" className='text-red-500'>Qudusoft Solutions</a></p>
         </div>
