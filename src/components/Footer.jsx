@@ -23,13 +23,13 @@ const Footer = () => {
             <div className='flex gap-2 items-center'>
               <MapPin className='text-red-500'/>
               <div>
-               <p>453, Garki Street</p>
-               <p>Abuja, Nigeria.</p>
+               <p>3F3G+74Q, Olusegun Obasanjo Wy, beside NNPC Mega Station.</p>
+               <p>Central Business Dis, Abuja, Nigeria.</p>
               </div>
             </div>
             <div className='flex gap-2 items-center'>
               <Phone className='text-red-500 my-4'/>
-               <p>Phone: (+234) 8123691891</p>
+               <p>Phone: (+234) 7015136111</p>
             </div>
             <div className='flex gap-2 items-center'>
               <Mail className='text-red-500'/>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='mt-8 border-t border-muted-foreground/20 pt-8 text-center'>
+        <div className='mt-8 border-t border-red-400/20 pt-8 text-center'>
           <p>&copy; {new Date().getFullYear()} <span className='text-red-500 font-semibold'>SarkinMota Autos</span> All rights Reserved</p>
           <p className=''>Powered by <a href="#" className='text-red-500'>Qudusoft Solutions</a></p>
         </div>

@@ -7,6 +7,7 @@ import WhyUs from '../components/WhyUs'
 import OurMision from '../components/OurMision'
 import Footer from '../components/Footer'
 import NewsAndAdvices from '../components/NewsAndAdvices'
+import ScrollToTop from 'react-scroll-to-top'
 
 
 
@@ -21,6 +22,12 @@ const Home = () => {
     <OurMision />
     <NewsAndAdvices/>
     <Footer />
+    <ScrollToTop smooth  color='white' style={{
+        backgroundColor: '#f03b3bff',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}/>
     </>
   )
 }

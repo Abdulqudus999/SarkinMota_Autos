@@ -7,11 +7,6 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   const navhandler = () => {
   setOpenMenu(!openMenu);
-  if (openMenu){
-    document.body.style.overflow = 'unsent';
-  } else {
-    document.body.style.overflow = 'hidden';
-  }
   }
   return (
     <nav className='bg-slate-100 py-1'>
