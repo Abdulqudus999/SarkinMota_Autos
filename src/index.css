@@ -9,3 +9,7 @@
   --font-Merriweather: "Merriweather" , sans-serif;
   --font-open-sans: "Open Sans", serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
